@@ -6,7 +6,7 @@ Python library to consume data from a source, transform and map the data, and fi
 
 As an example, let's say you want to take all the elements in a list and sent them to some side-effect function.
 
-```
+```python
 some_side_effect = []
 
 input_iterable = [1, 2, 3, 4]
