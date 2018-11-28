@@ -19,12 +19,12 @@ class TestPipeline(object):
         some_side_effect = []
 
         input_iterable = [1, 2, 3, 4]
-        identity_function = lambda x: x**2
-        output_method = lambda message: some_side_effect.append(message**2)
+        square_function = lambda x: x**2
+        output_method = lambda message: some_side_effect.append(message)
 
         runner(
             input_iterable=input_iterable, 
-            transform_function=identity_function, 
+            transform_function=square_function, 
             post_method=output_method
         )
 

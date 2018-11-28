@@ -4,4 +4,4 @@ def runner(
     post_method=None
 ):
     for item in input_iterable:
-        post_method(item)
+        post_method(transform_function(item))
